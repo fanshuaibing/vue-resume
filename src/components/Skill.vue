@@ -22,8 +22,7 @@
       <h2>Vue - ★★★★☆</h2>
       <hr>
       <ul>
-        <li>熟练使用 Vue.js,了解组建通信、双向绑定等</li>
-        <li>能使用Vue.js周边生态如Vue-router、Vuex等。</li>
+        <li>能够使用 Vue.js,了解组建通信、双向绑定、vue-router等</li>
       </ul>
     </div>
     <div class="skill">
