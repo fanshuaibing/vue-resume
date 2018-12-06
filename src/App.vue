@@ -9,13 +9,16 @@
 </template>
 
 <script>
-  import  slideBar from './components/sliderBar'
+
+import  slideBar from './components/sliderBar'
+
 export default {
   name: 'App',
   components:{
     slideBar
   }
 }
+
 </script>
 
 <style>
