@@ -14,7 +14,7 @@
       <hr>
       <ul>
         <li>了解 JavaScript，理解异步、this、闭包、原型链、面向对象等。</li>
-        <li>了解 ES6 的部分常用语法,能在项目中普遍使用let、块级作用域、箭头函数、Promise 等语法。
+        <li>了解 ES6 的常用语法,能在项目中普遍使用let、块级作用域、箭头函数、Promise、async\await 等语法。
         </li>
       </ul>
     </div>
@@ -22,7 +22,7 @@
       <h2>Vue - ★★★★☆</h2>
       <hr>
       <ul>
-        <li>能够使用 Vue.js,了解组建通信、双向绑定、vue-router等</li>
+        <li>能够使用 Vue.js,了解组件通信、双向绑定、vue-router、vuex等</li>
       </ul>
     </div>
     <div class="skill">

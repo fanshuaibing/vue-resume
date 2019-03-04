@@ -2,11 +2,11 @@
   <div class="slideBar">
     <div class="me">
       <img src="https://avatars3.githubusercontent.com/u/34294719?s=460&v=4" alt="">
-      <h2>黑白酱</h2>
+      <h2>范帅兵</h2>
     </div>
     <div class="tabs">
       <ul>
-        <li  class="active" @click="activeBtn">
+        <li class="tab"  @click="activeBtn">
           <router-link id="xxx" to="/">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-about"></use>
@@ -14,7 +14,7 @@
             关于
           </router-link>
         </li>
-        <li @click="activeBtn">
+        <li class="tab" @click="activeBtn">
           <router-link to="/work">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-zuopin"></use>
@@ -22,7 +22,7 @@
             作品
           </router-link>
         </li>
-        <li @click="activeBtn">
+        <li class="tab" @click="activeBtn">
           <router-link to="/skill">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-jineng"></use>
@@ -54,7 +54,19 @@
     name: "sliderBar",
     data(){
       return {
-
+        active:''
+      }
+    },
+    mounted: function () {
+      this.active = this.$route.path
+      let lis = $('.tab')
+      lis.children().removeClass('active');
+      if (this.active === '/') {
+        lis[0].classList.add('active')
+      } else if (this.active === '/work') {
+        lis[1].classList.add('active')
+      } else {
+        lis[2].classList.add('active')
       }
     },
     methods:{

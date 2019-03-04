@@ -1,9 +1,21 @@
 <template>
   <div class="works-wrapper">
     <ol class="works">
+      <li class="work">
+        <div class="img-wrapper"><a href="https://github.com/fatfanfan/blog"><img src="../assets/momo.png" title="点击预览" alt=""></a></div>
+        <div class="introduction">
+          <h3>
+            <a href="https://fatfanfan.github.io/blog/dist/#/">默默博客 -</a>
+            <a href="https://github.com/fatfanfan/blog">源码</a>
+          </h3>
+          <hr>
+          <p>功能: 登录注册功能，用户编辑创建删除博客功能，展示博客详情，查看用户信息等</p>
+          <p>技术栈: vue-cli、vue-router、Vuex、Axios、element-ui、ES6</p>
+        </div>
+      </li>
 
       <li class="work">
-        <div class="img-wrapper"><a href="https://fatfanfan.github.io/animating-resume/index.html"><img src="../assets/resume.png" alt=""></a></div>
+        <div class="img-wrapper"><a href="https://fatfanfan.github.io/animating-resume/index.html"><img src="../assets/resume.jpg" title="点击预览"  alt=""></a></div>
         <div class="introduction">
           <h3>
             <a href="https://fatfanfan.github.io/animating-resume/index.html">会动的简历 -</a>
@@ -15,38 +27,40 @@
       </li>
 
       <li class="work">
-        <div class="img-wrapper"><a href="https://fatfanfan.github.io/cnode/dist/#/"><img src="../assets/cnode.png" alt=""></a></div>
+        <div class="img-wrapper"><a href="https://fatfanfan.github.io/cnode/dist/#/"><img src="../assets/cnode.jpg" title="点击预览"  alt=""></a></div>
         <div class="introduction">
           <h3>
             <a href="https://fatfanfan.github.io/cnode/dist/#/">Vue仿cnode社区 -</a>
             <a href="https://github.com/fatfanfan/cnode">源码</a>
           </h3>
           <hr>
-          <p>使用vue-cil搭建项目架构，vue-router管理路由跳转，通过官方API发送请求，接收、处理数据并渲染，实现帖子查看，用户信息查看功能</p>
+          <p>通过官方API,渲染后，实现了帖子查看，用户信息查看功能</p>
+          <p>技术栈: vue-cli、vue-router、ES6、CSS3 </p>
+          <p></p>
         </div>
       </li>
 
 
       <li class="work">
-        <div class="img-wrapper"><a href="https://fatfanfan.github.io/keyboard/index.html"><img src="../assets/keyboard.jpg" alt=""></a></div>
+        <div class="img-wrapper"><a href="https://fatfanfan.github.io/keyboard/index.html"><img src="../assets/keyboard.jpg" title="点击预览"  alt=""></a></div>
         <div class="introduction">
           <h3>
             <a href="https://fatfanfan.github.io/keyboard/index.html">键盘导航 -</a>
             <a href="https://github.com/fatfanfan/keyboard">源码</a>
           </h3>
           <hr>
-          <p>该项目使用原生JS实现,通过键盘事件导向目标网址. 同时可以自己选择更改网址,按下键盘导向新网址.</p>
+          <p>该项目使用 原生JavaScript 实现,通过键盘事件导向目标网址. 同时可以自己选择更改网址,按下键盘导向新网址.</p>
         </div>
       </li>
       <li class="work">
-        <div class="img-wrapper"><a href="https://fatfanfan.github.io/canvas/1.html"><img src="../assets/canvas.jpg" alt=""></a></div>
+        <div class="img-wrapper"><a href="https://fatfanfan.github.io/canvas/index.html"><img src="../assets/canvas.jpg" title="点击预览"  alt=""></a></div>
         <div class="introduction">
           <h3>
-            <a href="https://fatfanfan.github.io/canvas/1.html">在线画板 -</a>
+            <a href="https://fatfanfan.github.io/canvas/index.html">默默画板 -</a>
             <a href="https://github.com/fatfanfan/canvas">源码</a>
           </h3>
           <hr>
-          <p>该项目使用 原生JS 实现，主要调用 Canvas API，支持移动端使用，实现了画画、调色、橡皮擦、保存等功能。</p>
+          <p>该项目使用 原生JavaScript 实现，主要调用 Canvas API，支持移动端使用，实现了画画、调色、橡皮擦、保存等功能。</p>
         </div>
       </li>
     </ol>

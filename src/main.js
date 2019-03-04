@@ -13,6 +13,6 @@ new Vue({
   components: { App },
   template: '<App/>',
   mounted(){
-      this.$router.push('/');
+      this.$router.push(`${this.$route.path}`);
   }
 })
