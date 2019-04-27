@@ -13,8 +13,8 @@
       <h2>JavaScript - ★★★★☆</h2>
       <hr>
       <ul>
-        <li>了解 JavaScript，理解异步、this、闭包、原型链、面向对象等。</li>
-        <li>了解 ES6 的常用语法,能在项目中普遍使用let、块级作用域、箭头函数、Promise、async\await 等语法。
+        <li>熟悉 JavaScript，理解异步、this、闭包、原型链、面向对象等。</li>
+        <li>熟悉 ES6 的常用语法,能在项目中普遍使用let、块级作用域、箭头函数、Promise、async\await 等语法。
         </li>
       </ul>
     </div>
@@ -22,25 +22,25 @@
       <h2>Vue - ★★★★☆</h2>
       <hr>
       <ul>
-        <li>能够使用 Vue.js,了解组件通信、双向绑定、vue-router、vuex等</li>
+        <li>能够使用 Vue 全家桶,了解组件通信、双向绑定、vue-router、vuex等</li>
       </ul>
     </div>
+	  <div class="skill">
+		  <h2>微信小程序 - ★★★☆☆</h2>
+		  <hr>
+		  <ul>
+			  <li>熟悉微信小程序的开发流程，能够进行原生微信小程序的开发。
+			  </li>
+		  </ul>
+	  </div>
     <div class="skill">
-      <h2>jQuery - ★★★☆☆</h2>
-      <hr>
-      <ul>
-        <li>熟悉 jQuery 的常用 API，能使用 jQuery 技术栈进行网站开发。
-        </li>
-      </ul>
-    </div>
-    <div class="skill">
-      <h2>HTTP与浏览器 - ★★★☆☆</h2>
-      <hr>
-      <ul>
-        <li>了解 HTTP 基础知识，了解常见状态码含义，能够根据请求查看响应。</li>
-        <li>理解浏览器运行机制，了解页面加载的整个过程。</li>
-      </ul>
-    </div>
+	  <h2>HTTP与浏览器 - ★★★☆☆</h2>
+	  <hr>
+	  <ul>
+		  <li>了解 HTTP 基础知识，了解常见状态码含义，能够根据请求查看响应。</li>
+		  <li>理解浏览器运行机制，了解页面加载的整个过程。</li>
+	  </ul>
+  </div>
   </div>
 </template>
 
@@ -68,18 +68,23 @@
     text-align: left;
   }
   li{
-    padding: 5px 0;
+    padding: 10px 0;
   }
 
   .skills{
     width: 0;
     flex-grow: 1;
-    overflow: auto;
-
+	  height: 100vh;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-around;
+	  background: black;
+	  color: #DCDCDC;
+	  font-size: 18px;
   }
   .skill{
     width: 80%;
-    margin: 20px auto ;
+	  margin: 0 auto;
   }
 
 </style>

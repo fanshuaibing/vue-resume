@@ -4,7 +4,6 @@
       <slideBar/>
       <router-view name="main"></router-view>
     </div>
-
   </div>
 </template>
 
@@ -36,14 +35,12 @@ export default {
   background-color:#2e5563;
 }
   .main{
-    min-width: 900px;
-    width: 60%;
-    height: 80vh;
+
+    width: 100%;
+    height: 100vh;
     display: flex;
     overflow: hidden;
     background-color: white;
-    border-radius: 20px;
-    box-shadow: gray 3px 3px;
   }
 
 
