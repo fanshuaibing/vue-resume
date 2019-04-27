@@ -6,7 +6,7 @@
 				                                                                          alt=""></a></div>
 				<div class="introduction">
 					<h2>
-						<a href="https://fatfanfan.github.io/mini-program" title="点击预览">拾夕 Todo 小程序 </a>
+						<a href="https://fatfanfan.github.io/tomato-mini" title="点击预览">拾夕 Todo 小程序 </a>
 
 					</h2>
 					<hr>
