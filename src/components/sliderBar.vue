@@ -7,7 +7,7 @@
 		<div class="tabs">
 			<ul>
 				<router-link id="xxx" to="/">
-					<li class="tab" :class="{active: index == 1}" @click="activeBtn(1)">
+					<li class="tab" :class="{active: index == 1}" @click="activeBtn('1')">
 						<svg class="icon" aria-hidden="true">
 							<use xlink:href="#icon-about"></use>
 						</svg>
@@ -52,29 +52,29 @@
     name: "sliderBar",
     data() {
       return {
+        active:'',
 	      index: 1
       }
     },
     mounted: function () {
-      this.active = this.$route.path
-	    let tabs = document.querySelectorAll('.tab')
-	    console.log(tabs)
-			tabs.forEach((tab)=>{tab.classList.remove('active')});
-
-      if (this.active === '/') {
-        tabs[0].classList.add('active')
-      }
-      else if (this.active === '/work') {
-        tabs[1].classList.add('active')
-      }
-      else {
-        tabs[2].classList.add('active')
-      }
-
+      this.changeBtn()
     },
     methods: {
-      activeBtn(e) {
-        this.index = e
+      activeBtn(index) {
+        this.index = index
+      },
+      changeBtn: function () {
+        this.active = this.$route.path;
+        this.index = 0;
+        if (this.active === '/') {
+          this.index = 1
+        }
+        else if (this.active === '/work') {
+          this.index = 2
+        }
+        else {
+          this.index = 3
+        }
       }
     }
 
