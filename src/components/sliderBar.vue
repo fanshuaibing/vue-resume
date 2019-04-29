@@ -7,7 +7,7 @@
 		<div class="tabs">
 			<ul>
 				<router-link id="xxx" to="/">
-					<li class="tab" @click="activeBtn">
+					<li class="tab" :class="{active: index == 1}" @click="activeBtn(1)">
 						<svg class="icon" aria-hidden="true">
 							<use xlink:href="#icon-about"></use>
 						</svg>
@@ -15,17 +15,15 @@
 					</li>
 				</router-link>
 				<router-link to="/work">
-					<li class="tab" @click="activeBtn">
-
+					<li class="tab" :class="{active: index == 2}" @click="activeBtn(2)">
 						<svg class="icon" aria-hidden="true">
 							<use xlink:href="#icon-zuopin"></use>
 						</svg>
-
 						<p>作品</p>
 					</li>
 				</router-link>
 				<router-link to="/skill">
-					<li class="tab" @click="activeBtn">
+					<li class="tab" :class="{active: index == 3}" @click="activeBtn(3)">
 						<svg class="icon" aria-hidden="true">
 							<use xlink:href="#icon-jineng"></use>
 						</svg>
@@ -50,36 +48,33 @@
 </template>
 
 <script>
-
-  import $ from 'jQuery'
-
   export default {
     name: "sliderBar",
     data() {
       return {
-        active: ''
+	      index: 1
       }
     },
     mounted: function () {
       this.active = this.$route.path
-      let lis = $('.tab')
-      lis.children().removeClass('active');
+	    let tabs = document.querySelectorAll('.tab')
+	    console.log(tabs)
+			tabs.forEach((tab)=>{tab.classList.remove('active')});
+
       if (this.active === '/') {
-        lis[0].classList.add('active')
+        tabs[0].classList.add('active')
       }
       else if (this.active === '/work') {
-        lis[1].classList.add('active')
+        tabs[1].classList.add('active')
       }
       else {
-        lis[2].classList.add('active')
+        tabs[2].classList.add('active')
       }
+
     },
     methods: {
       activeBtn(e) {
-        let $li = $(e.currentTarget)
-        let $tabs = $('.tab')
-        $tabs.removeClass('active')
-        $li.addClass('active')
+        this.index = e
       }
     }
 
@@ -174,7 +169,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin-bottom: 50px;
+		margin: 50px 0px;
 	}
 	.blog a{
 		padding: 10px  0px;
